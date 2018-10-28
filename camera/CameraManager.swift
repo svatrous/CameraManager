@@ -244,7 +244,7 @@ open class CameraManager: NSObject, AVCaptureFileOutputRecordingDelegate, UIGest
     fileprivate var locationManager: CameraLocationManager?
     
     fileprivate weak var embeddingView: UIView?
-    fileprivate var videoCompletion: ((_ videoURL: URL?, _ error: NSError?) -> Void)?
+    var videoCompletion: ((_ videoURL: URL?, _ error: NSError?) -> Void)?
     
     fileprivate var sessionQueue: DispatchQueue = DispatchQueue(label: "CameraSessionQueue", attributes: [])
     
